@@ -1,0 +1,7 @@
+{
+  "name": "epwp/conference",
+  "type": "wordpress-plugin",
+  "require": {
+    "composer/installers": "^1.0"
+  }
+}

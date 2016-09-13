@@ -11,3 +11,6 @@
  *
  * @package         Epwp
  */
+require_once( 'src/Bootstrap.php' );
+
+\Epwp\Bootstrap::getInstance();
