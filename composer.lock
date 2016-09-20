@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "9577d78c7f140219cf121c9367ff7a93",
-    "content-hash": "c50769d7eb9f2edaf65744ef7f964820",
+    "hash": "35f3973912a78fcd5392c5f8b57bf4a3",
+    "content-hash": "08c981bb7ca213d33a2bacc2a5c6c625",
     "packages": [
         {
             "name": "composer/installers",
@@ -381,6 +381,26 @@
             "time": "2016-10-08 03:50:28"
         },
         {
+            "name": "wpackagist-plugin/acf-field-date-time-picker",
+            "version": "2.1.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/acf-field-date-time-picker/",
+                "reference": "tags/2.1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/acf-field-date-time-picker.2.1.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/acf-field-date-time-picker/"
+        },
+        {
             "name": "wpackagist-plugin/advanced-custom-fields",
             "version": "4.4.11",
             "source": {
@@ -391,7 +411,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/advanced-custom-fields.4.4.11.zip",
-                "reference": null,
+                "reference": "tags/4.4.11",
                 "shasum": null
             },
             "require": {
