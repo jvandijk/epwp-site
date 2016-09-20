@@ -5,7 +5,9 @@ namespace Epwp;
 use Epwp\Core\Post\Speaker,
 	Epwp\Core\Post\Session,
 	Epwp\Core\Taxonomy\Track,
-	Epwp\Core\Taxonomy\Location;
+	Epwp\Core\Taxonomy\Location,
+	Epwp\Core\Field\Speaker as SpeakerFields,
+	Epwp\Core\Field\Session as SessionFields;
 
 class Bootstrap {
 	protected static $instance;
@@ -63,5 +65,7 @@ class Bootstrap {
 		$this->extend['core-post-session']      = new Session();
 		$this->extend['core-taxonomy-track']    = new Track();
 		$this->extend['core-taxonomy-location'] = new Location();
+		$this->extend['core-field-speaker']     = new SpeakerFields();
+		$this->extend['core-field-session']     = new SessionFields();
 	}
 }
