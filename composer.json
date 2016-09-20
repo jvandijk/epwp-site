@@ -39,7 +39,8 @@
     "johnpbloch/wordpress": "4.6.1",
     "oscarotero/env": "^1.0",
     "roots/wp-password-bcrypt": "1.0.0",
-    "wp-api/wp-api": "2.0-beta15"
+    "wp-api/wp-api": "2.0-beta15",
+    "wpackagist-plugin/advanced-custom-fields": "^4.4"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"

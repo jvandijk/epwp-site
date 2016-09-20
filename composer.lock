@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f745b153b152253faec88298ca07a4d1",
-    "content-hash": "b5085d6b207e881f5f34fb9acd3ac65b",
+    "hash": "9577d78c7f140219cf121c9367ff7a93",
+    "content-hash": "c50769d7eb9f2edaf65744ef7f964820",
     "packages": [
         {
             "name": "composer/installers",
@@ -379,6 +379,26 @@
             "description": "Access your WordPress site's data through an easy-to-use HTTP REST API.",
             "homepage": "http://wp-api.org/",
             "time": "2016-10-08 03:50:28"
+        },
+        {
+            "name": "wpackagist-plugin/advanced-custom-fields",
+            "version": "4.4.11",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/advanced-custom-fields/",
+                "reference": "tags/4.4.11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/advanced-custom-fields.4.4.11.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/advanced-custom-fields/"
         }
     ],
     "packages-dev": [
