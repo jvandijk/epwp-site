@@ -1,0 +1,28 @@
+# generate fake data for 40 speakers and sessions
+Trendwerk\Faker\Post:
+  speaker{1..40}:
+    post_content: <paragraphs(2, true)>
+    post_title (unique): '<name()>'
+    post_type: 'speaker'
+    meta:
+      # simulate that 80% provides a twitter handle
+      twitter: '80%? <userName()>'
+      # simulate that only half the users provide a linkedin address
+      linkedin: '50%? <url()>'
+  session{41..80}:
+    post_content: <realText(600, 4)>
+    post_title: '<sentence()>'
+    post_type: 'session'
+    # generate the post date up to 5 days and 8 hours in the past
+    post_date_gmt: <(gmdate('Y-m-d H:i:s', (time() - (rand(1, 5) * 86400) + (rand(1, 8) * 3600))))>
+    meta:
+      date: <(gmdate('Ymd', strtotime(@self->post_date_gmt)))>
+      # make the session start on a whole hour
+      start_time: <(strtotime(@self->post_date_gmt) - (strtotime(@self->post_date_gmt) % 3600))>
+      # end the session an hour later
+      end_time: <(3600 + strtotime(@self->post_date_gmt) - (strtotime(@self->post_date_gmt) % 3600))>
+      # reference the speaker (via hacky alice 2.x solution)
+      # replace the max post ID to have proper relation from session
+      speakers: <(array((string)((int)$this->valueForCurrent - 40 + 10)))>
+    terms:
+      location: <terms('location', 1)>
