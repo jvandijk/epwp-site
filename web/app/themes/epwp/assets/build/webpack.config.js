@@ -22,7 +22,10 @@ const jsLoader = {
   loaders: [{
     loader: 'babel',
     query: {
-      presets: [[path.resolve('./node_modules/babel-preset-es2015'), { modules: false }]],
+      presets: [
+        [path.resolve('./node_modules/babel-preset-es2015'), { modules: false }],
+        [path.resolve('./node_modules/babel-preset-react')]
+      ],
       cacheDirectory: true,
     },
   }],
