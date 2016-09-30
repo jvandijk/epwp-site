@@ -7,7 +7,8 @@ use Epwp\Core\Post\Speaker,
 	Epwp\Core\Taxonomy\Track,
 	Epwp\Core\Taxonomy\Location,
 	Epwp\Core\Field\Speaker as SpeakerFields,
-	Epwp\Core\Field\Session as SessionFields;
+	Epwp\Core\Field\Session as SessionFields,
+	Epwp\Core\Action\Session as SessionActions;
 
 class Bootstrap {
 	protected static $instance;
@@ -67,5 +68,6 @@ class Bootstrap {
 		$this->extend['core-taxonomy-location'] = new Location();
 		$this->extend['core-field-speaker']     = new SpeakerFields();
 		$this->extend['core-field-session']     = new SessionFields();
+		$this->extend['core-action-session']	= new SessionActions();
 	}
 }
