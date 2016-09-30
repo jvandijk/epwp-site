@@ -27,9 +27,10 @@
       <ul>
         <?php foreach ( $sessions as $session ): ?>
           <li>
-            <a href="<?php echo get_permalink( $session->ID ); ?>">
+            <a class="open-session" data-id="<?php echo $session->ID; ?>" href="<?php echo get_permalink( $session->ID ); ?>">
               <?php echo get_the_title( $session->ID ); ?>
             </a>
+            <div id="single-speaker-container-<?php echo $session->ID; ?>" />
           </li>
         <?php endforeach; ?>
       </ul>
