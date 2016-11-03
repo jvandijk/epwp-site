@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "35f3973912a78fcd5392c5f8b57bf4a3",
-    "content-hash": "08c981bb7ca213d33a2bacc2a5c6c625",
+    "hash": "f106e436396a5102d9a7e370f85a78a6",
+    "content-hash": "2230d6efc6efc45df61c88f14243adcc",
     "packages": [
         {
             "name": "composer/installers",
@@ -391,7 +391,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/acf-field-date-time-picker.2.1.1.zip",
-                "reference": null,
+                "reference": "tags/2.1.1",
                 "shasum": null
             },
             "require": {
@@ -419,6 +419,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/advanced-custom-fields/"
+        },
+        {
+            "name": "wpackagist-plugin/elasticpress",
+            "version": "2.1.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/elasticpress/",
+                "reference": "tags/2.1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/elasticpress.2.1.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/elasticpress/"
         }
     ],
     "packages-dev": [
