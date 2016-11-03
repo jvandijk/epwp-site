@@ -30,6 +30,19 @@
     {
       "type": "composer",
       "url": "https://wpackagist.org"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "10up/debug-bar-elasticpress",
+        "type": "wordpress-plugin",
+        "version": "1.1",
+        "source": {
+          "type": "git",
+          "url": "https://github.com/10up/debug-bar-elasticpress.git",
+          "reference": "106f9cd26f0bbe87f78a6d135047bde2bebee7e3"
+        }
+      }
     }
   ],
   "require": {
@@ -46,7 +59,8 @@
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1",
-    "wpackagist-plugin/debug-bar": "^0.8.4"
+    "wpackagist-plugin/debug-bar": "^0.8.4",
+    "10up/debug-bar-elasticpress": "^1.1"
   },
   "extra": {
     "installer-paths": {
