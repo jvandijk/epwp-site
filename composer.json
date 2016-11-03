@@ -45,7 +45,8 @@
     "wpackagist-plugin/elasticpress": "^2.1"
   },
   "require-dev": {
-    "squizlabs/php_codesniffer": "^2.5.1"
+    "squizlabs/php_codesniffer": "^2.5.1",
+    "wpackagist-plugin/debug-bar": "^0.8.4"
   },
   "extra": {
     "installer-paths": {
